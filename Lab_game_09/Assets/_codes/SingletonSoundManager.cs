@@ -62,6 +62,7 @@ public class SingletonSoundManager : Singleton<SingletonSoundManager>
 
     private void Awake()
     {
+        DontDestroyOnLoad(this.gameObject);
         this.BGMSource = this.GetComponent<AudioSource>();
 
         float musicVolume;

@@ -31,10 +31,10 @@ public class MainMenuControlScript : MonoBehaviour
 
     public void OptionsButtonClick(Button button)
     {
-        if (!GameApplicationManager.Instance.IsOptionMenuActive)
+        if (!SingletonGameApplicationManager.Instance.IsOptionMenuActive)
         {
             SceneManager.LoadScene("SceneOptions", LoadSceneMode.Additive);
-            GameApplicationManager.Instance.IsOptionMenuActive = true;
+            SingletonGameApplicationManager.Instance.IsOptionMenuActive = true;
         }
     }
 
