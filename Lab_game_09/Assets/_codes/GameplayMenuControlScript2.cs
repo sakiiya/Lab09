@@ -7,12 +7,10 @@ using UnityEngine.UI;
 public class GameplayMenuControlScript2 : MonoBehaviour
 {
     [SerializeField] Button _backButton;
-    [SerializeField] Button _nextButton;
     // Start is called before the first frame update
     void Start()
     {
         _backButton.onClick.AddListener(delegate { BackToMainMenuButtonClick(_backButton); });
-        _nextButton.onClick.AddListener(delegate { NextToGameplayButtonClick(_nextButton); });
     }
 
     // Update is called once per frame
@@ -24,12 +22,7 @@ public class GameplayMenuControlScript2 : MonoBehaviour
     {
         SceneManager.UnloadSceneAsync("SceneGameplay2");
         SceneManager.LoadScene("SceneMainMenu");
+        SingletonSoundManager.Instance.BGMSource.Stop();
         SingletonGameManager.Instance.GameScore++;
-    }
-
-    public void NextToGameplayButtonClick(Button button)
-    {
-        SceneManager.UnloadSceneAsync("SceneGameplay2");
-        SceneManager.LoadScene("SceneGameplay3");
     }
 }

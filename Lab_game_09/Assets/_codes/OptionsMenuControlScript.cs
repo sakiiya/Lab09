@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-
 public class OptionsMenuControlScript : MonoBehaviour
 {
     [SerializeField] Dropdown _dropdownDifficulty;
@@ -46,11 +45,20 @@ public class OptionsMenuControlScript : MonoBehaviour
     public void OnToggleMusic(Toggle toggle)
     {
         SingletonGameApplicationManager.Instance.MusicEnabled = _toggleMusic.isOn;
+        if (SingletonGameApplicationManager.Instance.MusicEnabled)
+            SingletonSoundManager.Instance.MusicVolume = SingletonSoundManager.Instance.MusicVolumeDefault;
+        else
+            SingletonSoundManager.Instance.MusicVolume = SingletonSoundManager.MUTE_VOLUME;
     }
 
     public void OnToggleSFX(Toggle toggle)
     {
         SingletonGameApplicationManager.Instance.SFXEnabled = _toggleSFX.isOn;
+        if (SingletonGameApplicationManager.Instance.SFXEnabled)
+            SingletonSoundManager.Instance.MasterSFXVolume = SingletonSoundManager.Instance.MasterSFXVolumeDefault;
+        else
+            SingletonSoundManager.Instance.MasterSFXVolume = SingletonSoundManager.MUTE_VOLUME;
+
     }
 
 }

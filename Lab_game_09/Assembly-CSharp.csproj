@@ -84,7 +84,9 @@
     <Compile Include="Assets\_codes\GameplayMenuControlScript2.cs" />
     <Compile Include="Assets\_codes\GameplayMenuControlScript3.cs" />
     <Compile Include="Assets\_codes\GodFingerManager.cs" />
+    <Compile Include="Assets\_codes\HelpMenuControlScript.cs" />
     <Compile Include="Assets\_codes\MainMenuControlScript.cs" />
+    <Compile Include="Assets\_codes\MainMenuControlScriptBGMSFX.cs" />
     <Compile Include="Assets\_codes\OptionsMenuControlScript.cs" />
     <Compile Include="Assets\_codes\Score.cs" />
     <Compile Include="Assets\_codes\Singleton.cs" />
@@ -92,6 +94,7 @@
     <Compile Include="Assets\_codes\SingletonGameManager.cs" />
     <Compile Include="Assets\_codes\SingletonSound.cs" />
     <Compile Include="Assets\_codes\SingletonSoundManager.cs" />
+    <Compile Include="Assets\_codes\TestSoundMenuControlScript.cs" />
     <Compile Include="Assets\_codes\Utilities.cs" />
     <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
     <Reference Include="UnityEngine">

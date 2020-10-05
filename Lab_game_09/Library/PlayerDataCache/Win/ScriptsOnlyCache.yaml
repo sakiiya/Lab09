@@ -4,7 +4,6 @@ ScriptsOnlyBuild:
     - UnityStandardAssets.Characters.ThirdPerson.ThirdPersonCharacter
     - UnityStandardAssets.Characters.ThirdPerson.ThirdPersonUserControl
     Assembly-CSharp.dll:
-    - GameApplicationManager
     - GameObjectsSpawnManager
     - GameplayMenuControlScript
     - GameplayMenuControlScript2
@@ -12,6 +11,7 @@ ScriptsOnlyBuild:
     - GodFingerManager
     - ItemTypeComponent
     - MainMenuControlScript
+    - MainMenuControlScriptBGMSFX
     - OptionsMenuControlScript
     - PlayerCollisionCheck
     - PlayerCollisionCheckWithITC
@@ -99,13 +99,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11978}
     - Class: 114
-      Script: {instanceID: 12110}
+      Script: {instanceID: 12112}
     - Class: 114
-      Script: {instanceID: 12150}
+      Script: {instanceID: 12152}
     - Class: 114
-      Script: {instanceID: 12854}
+      Script: {instanceID: 12856}
     - Class: 114
-      Script: {instanceID: 13234}
+      Script: {instanceID: 13236}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -172,21 +172,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11926}
     - Class: 114
-      Script: {instanceID: 12150}
-    - Class: 114
       Script: {instanceID: 12152}
     - Class: 114
-      Script: {instanceID: 12606}
+      Script: {instanceID: 12154}
     - Class: 114
-      Script: {instanceID: 12824}
+      Script: {instanceID: 12608}
     - Class: 114
-      Script: {instanceID: 12838}
+      Script: {instanceID: 12826}
     - Class: 114
-      Script: {instanceID: 12854}
+      Script: {instanceID: 12840}
     - Class: 114
-      Script: {instanceID: 13234}
+      Script: {instanceID: 12856}
     - Class: 114
-      Script: {instanceID: 13294}
+      Script: {instanceID: 13236}
+    - Class: 114
+      Script: {instanceID: 13296}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -247,20 +247,69 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11430}
     - Class: 114
-      Script: {instanceID: 12150}
+      Script: {instanceID: 12152}
     - Class: 114
-      Script: {instanceID: 12706}
+      Script: {instanceID: 12708}
     - Class: 114
-      Script: {instanceID: 12854}
+      Script: {instanceID: 12856}
     - Class: 114
-      Script: {instanceID: 13082}
+      Script: {instanceID: 13084}
     - Class: 114
-      Script: {instanceID: 13234}
+      Script: {instanceID: 13236}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
       Script: {instanceID: 0}
     - Class: 136
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/SceneHelp.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11176}
+    - Class: 114
+      Script: {instanceID: 11178}
+    - Class: 114
+      Script: {instanceID: 11182}
+    - Class: 114
+      Script: {instanceID: 11202}
+    - Class: 114
+      Script: {instanceID: 11430}
+    - Class: 114
+      Script: {instanceID: 12856}
+    - Class: 114
+      Script: {instanceID: 13236}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -310,19 +359,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11564}
     - Class: 114
-      Script: {instanceID: 12244}
-    - Class: 114
       Script: {instanceID: 12274}
     - Class: 114
-      Script: {instanceID: 12412}
+      Script: {instanceID: 12314}
     - Class: 114
-      Script: {instanceID: 12548}
+      Script: {instanceID: 12414}
     - Class: 114
-      Script: {instanceID: 12854}
+      Script: {instanceID: 12550}
     - Class: 114
-      Script: {instanceID: 13234}
+      Script: {instanceID: 12856}
     - Class: 114
-      Script: {instanceID: 19596}
+      Script: {instanceID: 13236}
+    - Class: 114
+      Script: {instanceID: 13774}
+    - Class: 114
+      Script: {instanceID: 17224}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -383,13 +434,62 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12092}
     - Class: 114
-      Script: {instanceID: 12854}
+      Script: {instanceID: 12856}
     - Class: 114
-      Script: {instanceID: 13220}
+      Script: {instanceID: 13222}
     - Class: 114
-      Script: {instanceID: 13234}
+      Script: {instanceID: 13236}
     - Class: 114
-      Script: {instanceID: 13248}
+      Script: {instanceID: 13250}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/SceneSoundTesting.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11176}
+    - Class: 114
+      Script: {instanceID: 11178}
+    - Class: 114
+      Script: {instanceID: 11182}
+    - Class: 114
+      Script: {instanceID: 11202}
+    - Class: 114
+      Script: {instanceID: 11430}
+    - Class: 114
+      Script: {instanceID: 12856}
+    - Class: 114
+      Script: {instanceID: 13236}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -902,6 +1002,12 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SingletonSound
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: UnityStandardAssets.Characters.ThirdPerson
     className: ThirdPersonUserControl
@@ -991,12 +1097,6 @@ ScriptsOnlyBuild:
     className: ObjectResetter
   - hash:
       serializedVersion: 2
-      Hash: 257eff9ba223c02e118bbf70e801363b
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: GameApplicationManager
-  - hash:
-      serializedVersion: 2
       Hash: 9df954eca51e9f2b95915ae2918e4258
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: UnityStandardAssets.Effects
@@ -1037,6 +1137,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: UnityStandardAssets.Water
     className: WaterBasic
+  - hash:
+      serializedVersion: 2
+      Hash: b66959835d94031afa443f92e0c7882a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SingletonGameApplicationManager
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1483,10 +1589,10 @@ ScriptsOnlyBuild:
     className: AutoMobileShaderSwitch
   - hash:
       serializedVersion: 2
-      Hash: b66959835d94031afa443f92e0c7882a
+      Hash: c798a82dcfc4b24b245fc2dbcd52aaf2
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: SingletonGameApplicationManager
+    className: MainMenuControlScriptBGMSFX
   platform: 5
   scenePathNames:
   - Assets/Scenes/SceneMainMenu.unity
@@ -1494,4 +1600,6 @@ ScriptsOnlyBuild:
   - Assets/Scenes/SceneGameplay.unity
   - Assets/Scenes/SceneGameplay2.unity
   - Assets/Scenes/SceneGameplay3.unity
-  playerPath: C:/Users/CAMT/Desktop/085/Game/Lab_game_09.exe
+  - Assets/Scenes/SceneSoundTesting.unity
+  - Assets/Scenes/SceneHelp.unity
+  playerPath: D:/Game2/Game/Lab_game_09.exe

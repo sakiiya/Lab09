@@ -22,6 +22,7 @@ public class GameplayMenuControlScript : MonoBehaviour
     }
     public void BackToMainMenuButtonClick(Button button)
     {
+            SingletonSoundManager.Instance.BGMSource.Stop();
         SceneManager.UnloadSceneAsync("SceneGameplay");
         SceneManager.LoadScene("SceneMainMenu");
         SingletonGameManager.Instance.GameScore++;
@@ -29,6 +30,7 @@ public class GameplayMenuControlScript : MonoBehaviour
 
     public void NextToGameplayButtonClick(Button button)
     {
+            SingletonSoundManager.Instance.BGMSource.Play();
         SceneManager.UnloadSceneAsync("SceneGameplay");
         SceneManager.LoadScene("SceneGameplay2");
         SingletonGameManager.Instance.GameScore++;
